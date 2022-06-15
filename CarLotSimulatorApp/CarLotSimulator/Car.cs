@@ -5,6 +5,7 @@ namespace CarLotSimulator
 	{
 		public Car()
 		{
+			CarLot.numberOfCars++;
 		}
 
 		public Car(string make,
@@ -28,6 +29,7 @@ namespace CarLotSimulator
 		public string EngineNoise { get; set; }
 		public string HonkNoise { get; set; }
 		public bool IsDrivable { get; set; }
+
 		public void MakeHonkNoise()
         {
 			Console.WriteLine(HonkNoise);

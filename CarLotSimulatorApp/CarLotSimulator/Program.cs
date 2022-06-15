@@ -44,9 +44,7 @@ namespace CarLotSimulator
             };
             lot.Cars.Add(lemonCar);
 
-            niceCar.MakeEngineNoise();
-            reliableCar.MakeEngineNoise();
-            lemonCar.MakeEngineNoise();
+            Console.WriteLine($"\n\nTotal cars in lot: {CarLot.numberOfCars}\n\n");
 
             foreach (var car in lot.Cars)
             {
@@ -54,6 +52,7 @@ namespace CarLotSimulator
                     $"\nModel: {car.Model}" +
                     $"\nYear: {car.Year}" +
                     $"\nDescription: The engine {car.EngineNoise} and the horn makes a {car.HonkNoise} sound.\n\n");
+                
             }
             //*************BONUS*************//
 
